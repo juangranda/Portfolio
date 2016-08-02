@@ -1,0 +1,30 @@
+﻿body {
+}
+/*static menu*/
+body.landing #header{
+    /*position:fixed;*/
+}
+#banner {
+    background-image: url('../../images/ecuador-night-pic.jpg');
+}
+.image:before{
+    background-image:none !important;
+}
+.container .jg-pic .image {
+    width:16em;
+    height:16em;
+}
+.jg-pic .image{
+    border-radius:100%;
+}
+.spotlight:before {
+    background-image: none;
+}
+.sm-margin{
+    margin:-.5em 0 1.5em 0;
+}
+header .md-p{
+    font-size:1.25em;
+}
+
+
