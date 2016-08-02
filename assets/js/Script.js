@@ -4,7 +4,7 @@ $(function () {
     setTimeout(function () {
         $('.animationList').removeClass('hidden');
     }, 500);
-})();
+});
 
 function showRPS() {
     $('#rps').fadeOut(50, function () {
