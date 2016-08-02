@@ -31,6 +31,7 @@ header .md-p{
 }
 .animationList li{
     font-weight:400;
+    font-size:1.5em;
     list-style:none;
     display:inline-block;
     opacity:1;
@@ -46,15 +47,15 @@ header .md-p{
 .animationList.hidden li:nth-child(5) { transform: translateX(200px) translateY(-230px);}
 .animationList.hidden li:nth-child(6) { transform: translateX(-300px) translateY(300px);}
 .animationList.hidden li:nth-child(7) { transform: translateX(120px) translateY(180px);}
-.animationList.hidden li:nth-child(8) { transform: translateX(-400px) translateY(0px);}
+.animationList.hidden li:nth-child(8) { transform: translateX(0px) translateY(-200px);}
 .animationList.hidden li:nth-child(10) { transform: translateX(-500px) translateY(-255px);}
-.animationList.hidden li:nth-child(11) { transform: translateX(750px) translateY(0px);}
+.animationList.hidden li:nth-child(11) { transform: translateX(0px) translateY(200px);}
 .animationList.hidden li:nth-child(12) { transform: translateX(-350px) translateY(-210px);}
-.animationList.hidden li:nth-child(13) { transform: translateX(550px) translateY(0px);}
+.animationList.hidden li:nth-child(13) { transform: translateX(0px) translateY(200px);}
 .animationList.hidden li:nth-child(14) { transform: translateX(250px) translateY(-200px);}
 .animationList.hidden li:nth-child(15) { transform: translateX(-650px) translateY(190px);}
 .animationList.hidden li:nth-child(16) { transform: translateX(-250px) translateY(-283px);}
-.animationList.hidden li:nth-child(17) { transform: translateX(150px) translateY(0px);}
+.animationList.hidden li:nth-child(17) { transform: translateX(0px) translateY(200px);}
 .animationList.hidden li:nth-child(18) { transform: translateX(350px) translateY(-200px);}
 .lg-github{
     font-size:1.5em;
@@ -66,6 +67,26 @@ header .md-p{
     background-color:rgba(255,255,255,.8);
     color:#272833 !important;
 }
+.image.fit.cons{
+    display: inline;
+    margin: 0 1% 0 .5%;
+    width: 49%;
+    float:left;
+    overflow:hidden;
+}
+.image.fit.cons img {
+    width:auto;
+}
+.image.fit.cons2{
+    display: inline;
+    margin: 0 0 0 0;
+    width: 49%;
+    float:left;
+}
+.image.fit.cons2 img{
+    width:auto;
+}
+
 
 
 
