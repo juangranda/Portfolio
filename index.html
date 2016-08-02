@@ -24,7 +24,7 @@
             <nav id="nav">
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="#one">About Me</a></li>
+                    <li><a href="#one" class="scrolly">About Me</a></li>
                     <li>
                         <a href="#">Projects</a>
                         <ul>
@@ -91,7 +91,7 @@
                             </header>
                         </div>
                         <div class="4u 12u$(medium)" id="bio">
-                            <h3>Hello, my name is Juan. I am a Software Developer in Cleveland, OH</h3>
+                            <h3>Hello, my name is Juan. I am a Software Developer living in Cleveland, OH</h3>
                             <p>I was born in Quito, Ecuador. At 17, I decided to come to the US to study music. After earning my BA I went back to school to became an Audio Engineer.</p>
                         </div>
                         <div class="4u$ 12u$(medium)">
@@ -134,7 +134,7 @@
                     <li><a href="https://github.com/juangranda/summer-school-mvc" target="_blank" class="button"><span class="icon alt fa-github lg-github"></span><span id="githubText">&nbsp; Github</span></a></li>
                 </ul>
             </div>
-            <a href="#four" class="goto-next scrolly">Next</a>
+            <a href="#main" class="goto-next scrolly">Next</a>
         </section>
 
 
@@ -150,10 +150,11 @@
 
                         <!-- Content -->
                         <section id="content">
-                            <a href="#" class="image fit" onmouseover="showRPS(), showRPS2()" onmouseout="hideRPS(), hideRPS2()"><img src="images/RPS-home-pic.jpg" /></a>
-                            <a href="#" class="image fit cons"><img id="rps" /></a>
-                            <a href="#" class="image fit cons2"><img id="rps2" /></a>
-
+                            <span class="image fit"><img src="images/RPS-home-pic.jpg" /></span>
+                            <span id="hideTest">
+                                <a href="#" class="image fit cons consoleHidden"><img id="rps" src="images/RPS-menu-scrn-pic.jpg" /></a>
+                                <a href="#" class="image fit cons2 consoleHidden"><img id="rps2" src="images/RPS-vs-scrn-pic.jpg" /></a>
+                            </span>
                             <h3>Rock Paper Scissors</h3>
                             <p>Play against my bots or have them play each other. Bots are based on four different algorithms. Stubborn bot will always choose the same option, Short Attention Span bot will play what would've have won the last round. Randon bot is...random and Smart bot is kind of impossible to beat. It will learn your moves and get better and better every time you play.</p>
                         </section>
@@ -171,9 +172,22 @@
                                     <li>Short Attention Span bot</li>
                                     <li>Smart bot</li>
                                 </ul>
+                                <!--<ul class="screenShotIcons" onmouseover="showRPS(), showRPS2()" onmouseout="hideRPS(), hideRPS2()">-->
+                                <ul class="screenShotIcons">
+                                    <li><span class="icon alt fa-camera-retro screenShots" id="rps-scrn-shots"></span></li>
+                                    <li>Screen Shots</li>
+                                </ul>
+                                <!--<span class="icon alt fa-camera-retro screenShots"></span>-->
+
                                 <footer>
                                     <ul class="actions">
-                                        <li><a href="#" class="button">Learn More</a></li>
+                                        <li>
+                                            <!--<section class="4u$ 6u(medium) 12u$(xsmall)">
+                                                <span class="icon alt major fa-camera-retro"></span>
+                                                <p></p>
+                                            </section>-->
+                                        </li>
+                                        <!--<li><span class="arrow" onmouseover="showRPS(), showRPS2()" onmouseout="hideRPS(), hideRPS2()">&lt;</span></li>-->
                                     </ul>
                                 </footer>
                             </section>
@@ -194,42 +208,27 @@
 
 
         <!-- Four -->
-        <section id="four" class="wrapper style1 special fade-up">
+        <section id="four" class="wrapper style1 special fade-up new-BG">
             <div class="container">
-                <header class="major">
-                    <h2>Check out my work</h2>
-                    <p>Get in touch</p>
+                <header class="major" id="less-margin">
+                    <h2 class="blkFont">Check out my work</h2>
+                    <h3 class="blkFont">Get in touch</h3>
                 </header>
                 <div class="box alt">
                     <div class="row uniform">
                         <section class="4u 6u(medium) 12u$(xsmall)">
-                            <span class="icon alt major fa-github"></span>
-                            <h3>GitHub</h3>
+                            <span class="icon major sm fa-github"></span>
+                            <h3 class="blkFont">GitHub</h3>
                         </section>
                         <section class="4u 6u$(medium) 12u$(xsmall)">
-                            <span class="icon alt major fa-envelope"></span>
-                            <h3>Email</h3>
+                            <span class="icon major sm fa-envelope"></span>
+                            <h3 class="blkFont">Email</h3>
                         </section>
                         <section class="4u$ 6u(medium) 12u$(xsmall)">
-                            <span class="icon alt major fa-linkedin"></span>
-                            <h3>LinkedIn</h3>
+                            <span class="icon major sm fa-linkedin"></span>
+                            <h3 class="blkFont">LinkedIn</h3>
                             <p></p>
                         </section>
-                        <!--<section class="4u 6u$(medium) 12u$(xsmall)"> 
-                            <span class="icon alt major fa-paper-plane"></span>
-                            <h3>Non semper interdum</h3>
-                            <p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
-                        </section>
-                        <section class="4u 6u(medium) 12u$(xsmall)">
-                            <span class="icon alt major fa-file"></span>
-                            <h3>Odio laoreet accumsan</h3>
-                            <p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
-                        </section>
-                        <section class="4u$ 6u$(medium) 12u$(xsmall)">
-                            <span class="icon alt major fa-lock"></span>
-                            <h3>Massa arcu accumsan</h3>
-                            <p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
-                        </section>-->
                     </div>
                 </div>
                 <!--<footer class="major">
@@ -245,7 +244,7 @@
             <div class="container">
                 <header>
                     <h2>Interested in working on a project together?</h2>
-                    <p>I'm always to open to work on new ideas</p>
+                    <p>I'm always open to work on new ideas</p>
                 </header>
                 <footer class="major">
                     <ul class="actions">

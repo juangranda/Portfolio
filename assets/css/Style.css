@@ -86,6 +86,47 @@ header .md-p{
 .image.fit.cons2 img{
     width:auto;
 }
+.arrow{
+    font-size:4em;
+}
+.screenShots{
+    font-size:2em;
+}
+.screenShotIcons li{
+    list-style:none;
+    display:inline-block;
+    margin:0;
+    cursor:pointer;
+}
+.screenShotIcons{
+    padding-left:0;
+}
+.new-BG{
+    /*background:rgb(228,76,101);*/
+    background:rgb(39,40,51);
+    padding:2em 0 .5em 0;
+}
+/*.icon.major.sm{
+    color:rgb(39,40,51);
+}*/
+.wrapper.style2{
+    /*background:rgb(28,29,38);*/
+}
+#footer{
+    background:rgb(39,40,51);
+    padding:2em 0;
+}
+.icon.major.sm{
+    color:rgb(39,40,51);
+    background:rgb(255,255,255);
+    height:4em;
+    line-height:4em;
+    width:4em;
+    margin:0 0 0 0;
+}
+#less-margin{
+    margin-bottom:2em;
+}
 
 
 
