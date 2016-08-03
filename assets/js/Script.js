@@ -9,6 +9,6 @@ $(function () {
 $(document).ready(function(){
     $('#hideTest').hide();
         $('#rps-scrn-shots').click(function () {
-                $('#hideTest').toggle(300);
+                $('#hideTest').toggle(500);
     });
 })

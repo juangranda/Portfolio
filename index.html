@@ -20,7 +20,7 @@
 
         <!-- Header -->
         <header id="header">
-            <h1 id="logo"><a href="index.html">Juan C. Granda</a></h1>
+            <h1 id="logo"><a href="index.html">Juan Granda</a></h1>
             <nav id="nav">
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -28,13 +28,13 @@
                     <li>
                         <a href="#">Projects</a>
                         <ul>
-                            <li><a href="#two">Web Design</a></li>
-                            <li><a href="#three">ASP.NET MVC5</a></li>
-                            <li><a href="#">Magic 8 Ball</a></li>
+                            <li><a href="#two" class="scrolly">Web Design</a></li>
+                            <li><a href="#three" class="scrolly">ASP.NET MVC5</a></li>
+                            <li><a href="#" class="scrolly">Magic 8 Ball</a></li>
                             <li>
-                                <a href="#">Console Apps</a>
+                                <a href="#main" class="scrolly">Console Apps</a>
                                 <ul>
-                                    <li><a href="#">Rock - Paper - Scissors</a></li>
+                                    <li><a href="#rock-paper-scissors" class="scrolly">Rock - Paper - Scissors</a></li>
                                     <li><a href="#">Virtual Pet</a></li>
                                 </ul>
                             </li>
@@ -49,7 +49,7 @@
         <!-- Banner -->
         <section id="banner">
             <div class="content">
-                <header>
+                <header class="flyList">
                     <h1 id="myName">Juan Granda</h1>
                     <ul class="animationList hidden">
                         <li>S</li>
@@ -60,7 +60,8 @@
                         <li>a</li>
                         <li>r</li>
                         <li>e</li>
-                        <li> &nbsp; </li>
+                    </ul>
+                    <ul class="animationList hidden">
                         <li>D</li>
                         <li>e</li>
                         <li>v</li>
@@ -70,7 +71,6 @@
                         <li>p</li>
                         <li>e</li>
                         <li>r</li>
-
                     </ul>
                 </header>
             </div>
@@ -92,7 +92,7 @@
                         </div>
                         <div class="4u 12u$(medium)" id="bio">
                             <h3>Hello, my name is Juan. I am a Software Developer living in Cleveland, OH</h3>
-                            <p>I was born in Quito, Ecuador. At 17, I decided to come to the US to study music. After earning my BA I went back to school to became an Audio Engineer.</p>
+                            <p>I grew up in a beatiful country called Ecuador. At 17, I decided to come to the US to study music. After earning my BA I went back to school to become an Audio Engineer.</p>
                         </div>
                         <div class="4u$ 12u$(medium)">
                             <p>While freelancing and working full-time I started developing an interest in computer coding. I became a Media Manager and after holding this position for a few years I decided to persue my new passion as a developer. This is when I became a student/apprentice at WeCanCodeIt. I worked with .NET and developed my coding skills in C# as well as HTML, CSS, Javascript, ASP.NET MVC5, mySQL and Unity</p>
@@ -149,14 +149,27 @@
                     <div class="8u 12u$(medium)">
 
                         <!-- Content -->
-                        <section id="content">
-                            <span class="image fit"><img src="images/RPS-home-pic.jpg" /></span>
-                            <span id="hideTest">
-                                <a href="#" class="image fit cons consoleHidden"><img id="rps" src="images/RPS-menu-scrn-pic.jpg" /></a>
-                                <a href="#" class="image fit cons2 consoleHidden"><img id="rps2" src="images/RPS-vs-scrn-pic.jpg" /></a>
-                            </span>
-                            <h3>Rock Paper Scissors</h3>
-                            <p>Play against my bots or have them play each other. Bots are based on four different algorithms. Stubborn bot will always choose the same option, Short Attention Span bot will play what would've have won the last round. Randon bot is...random and Smart bot is kind of impossible to beat. It will learn your moves and get better and better every time you play.</p>
+                        <section id="rock-paper-scissors">
+                            <section id="content">
+                                <span class="image fit"><img src="images/RPS-home-pic.jpg" /></span>
+                                <div class="morePics">
+                                    <ul class="actions">
+                                        <li>
+                                            <span class="button small" id="rps-scrn-shots">
+                                                <span class="icon alt fa-camera-retro lg-github screenShots">&nbsp;</span>
+                                                <span class="icon fa-angle-double-down"></span>
+                                            </span>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                                <span id="hideTest">
+                                    <span class="image fit cons"><img id="rps" src="images/RPS-menu-scrn-pic.jpg" /></span>
+                                    <span class="image fit cons2"><img id="rps2" src="images/RPS-vs-scrn-pic.jpg" /></span>
+                                </span>
+                                <h3>Rock Paper Scissors</h3>
+                                <p>Play against my bots or have them play each other. Bots are based on four different algorithms. Stubborn bot will always choose the same option, Short Attention Span bot will play what would've have won the last round. Randon bot is...random and Smart bot is kind of impossible to beat. It will learn your moves and get better and better every time you play.</p>
+                            </section>
                         </section>
                     </div>
                     <div class="4u$ 12u$(medium)">
@@ -164,7 +177,7 @@
                         <!-- Sidebar -->
                         <section id="sidebar">
                             <section>
-                                <h3>Rock paper Scissors</h3>
+                                <h3>Rock Paper Scissors</h3>
                                 <h5>BOTS:</h5>
                                 <ul>
                                     <li>Random bot</li>
@@ -172,29 +185,17 @@
                                     <li>Short Attention Span bot</li>
                                     <li>Smart bot</li>
                                 </ul>
-                                <!--<ul class="screenShotIcons" onmouseover="showRPS(), showRPS2()" onmouseout="hideRPS(), hideRPS2()">-->
-                                <ul class="screenShotIcons">
-                                    <li><span class="icon alt fa-camera-retro screenShots" id="rps-scrn-shots"></span></li>
-                                    <li>Screen Shots</li>
+                                <ul class="actions">
+                                    <li><a href="https://github.com/juangranda/rock-paper-scissors" target="_blank" class="button small"><span class="icon alt fa-github lg-github">&nbsp; GitHub</span></a></li>
                                 </ul>
-                                <!--<span class="icon alt fa-camera-retro screenShots"></span>-->
-
-                                <footer>
-                                    <ul class="actions">
-                                        <li>
-                                            <!--<section class="4u$ 6u(medium) 12u$(xsmall)">
-                                                <span class="icon alt major fa-camera-retro"></span>
-                                                <p></p>
-                                            </section>-->
-                                        </li>
-                                        <!--<li><span class="arrow" onmouseover="showRPS(), showRPS2()" onmouseout="hideRPS(), hideRPS2()">&lt;</span></li>-->
-                                    </ul>
-                                </footer>
                             </section>
                             <hr />
                             <section>
-                                <a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
-                                <h3>Visual Studio | C#</h3>
+                                <!--<a href="#" class="image fit"><img src="images/visual-studio-logo.jpg" alt="visual studio logo" /></a>-->
+                                <ul>
+                                    <li><b>Software: </b>Microsoft Visual Studio</li>
+                                    <li><b>Language: </b>C#</li>
+                                </ul>
                             </section>
                         </section>
                     </div>
@@ -218,16 +219,15 @@
                     <div class="row uniform">
                         <section class="4u 6u(medium) 12u$(xsmall)">
                             <span class="icon major sm fa-github"></span>
-                            <h3 class="blkFont">GitHub</h3>
+                            <a href="https://github.com/juangranda" target="_blank"><h3 class="blkFont">GitHub</h3></a>
                         </section>
                         <section class="4u 6u$(medium) 12u$(xsmall)">
                             <span class="icon major sm fa-envelope"></span>
-                            <h3 class="blkFont">Email</h3>
+                            <a href="mailto:juanfromecuador@gmail.com" target="_blank"><h3 class="blkFont">Email</h3></a>
                         </section>
                         <section class="4u$ 6u(medium) 12u$(xsmall)">
                             <span class="icon major sm fa-linkedin"></span>
-                            <h3 class="blkFont">LinkedIn</h3>
-                            <p></p>
+                            <a href="https://www.linkedin.com/in/juan-granda" target="_blank"><h3 class="blkFont">LinkedIn</h3></a>
                         </section>
                     </div>
                 </div>
@@ -264,12 +264,11 @@
         <!-- Footer -->
         <footer id="footer">
             <ul class="icons">
-                <li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
                 <li><a href="#" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
-                <li><a href="#" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                <li><a href="https://www.linkedin.com/in/juan-granda" target="_blank" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
                 <li><a href="#" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
-                <li><a href="#" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
-                <li><a href="#" class="icon alt fa-envelope"><span class="label">Email</span></a></li>
+                <li><a href="https://github.com/juangranda" target="_blank" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
+                <li><a href="mailto:juanfromecuador@gmail.com" target="_blank" class="icon alt fa-envelope"><span class="label">Email</span></a></li>
             </ul>
             <ul class="copyright">
                 <li>&copy; Juan Granda. All rights reserved.</li>

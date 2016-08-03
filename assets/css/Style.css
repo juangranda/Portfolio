@@ -26,6 +26,9 @@ body.landing #header{
 .sm-margin{
     margin:-.5em 0 1.5em 0;
 }
+.flyList{
+    text-align:center;
+}
 header .md-p{
     font-size:1.25em;
 }
@@ -37,6 +40,11 @@ header .md-p{
     opacity:1;
     transition: all 2.5s ease;
 }
+ul.animationList{
+    padding-left:0;
+    margin-left:-1em;
+}
+
 .animationList.hidden li{
     opacity:0;
 }
@@ -68,29 +76,32 @@ header .md-p{
     color:#272833 !important;
 }
 .image.fit.cons{
-    display: inline;
-    margin: 0 1% 0 .5%;
-    width: 49%;
-    float:left;
-    overflow:hidden;
+    /*display: inline;*/
+    display:block;
+    /*margin: 0 1% 0 .5%;*/
+    margin:0 0 1em 0; 
+    /*width: 49%;*/
+    /*float:left;*/
 }
 .image.fit.cons img {
-    width:auto;
+    /*width:auto;*/
 }
 .image.fit.cons2{
-    display: inline;
-    margin: 0 0 0 0;
-    width: 49%;
-    float:left;
+    /*display: inline;*/
+    display:block;
+    /*margin: 0 0 0 0;*/
+    margin:auto;
+    /*width: 49%;*/
+    /*float:left;*/
 }
 .image.fit.cons2 img{
-    width:auto;
-}
-.arrow{
-    font-size:4em;
+    /*width:auto;*/
 }
 .screenShots{
-    font-size:2em;
+    font-size:1em;
+}
+.morePics{
+    margin-bottom:1em;
 }
 .screenShotIcons li{
     list-style:none;
