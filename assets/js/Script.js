@@ -7,8 +7,15 @@ $(function () {
 });
 
 $(document).ready(function(){
-    $('#hideTest').hide();
+    $('#hide1').hide();
         $('#rps-scrn-shots').click(function () {
-                $('#hideTest').toggle(500);
+                $('#hide1').toggle(500);
+    });
+})
+
+$(document).ready(function () {
+    $('#hide2').hide();
+    $('#rps-scrn-shots2').click(function () {
+        $('#hide2').toggle(500);
     });
 })

@@ -76,26 +76,12 @@ ul.animationList{
     color:#272833 !important;
 }
 .image.fit.cons{
-    /*display: inline;*/
     display:block;
-    /*margin: 0 1% 0 .5%;*/
     margin:0 0 1em 0; 
-    /*width: 49%;*/
-    /*float:left;*/
-}
-.image.fit.cons img {
-    /*width:auto;*/
 }
 .image.fit.cons2{
-    /*display: inline;*/
     display:block;
-    /*margin: 0 0 0 0;*/
     margin:auto;
-    /*width: 49%;*/
-    /*float:left;*/
-}
-.image.fit.cons2 img{
-    /*width:auto;*/
 }
 .screenShots{
     font-size:1em;
@@ -113,16 +99,17 @@ ul.animationList{
     padding-left:0;
 }
 .new-BG{
-    /*background:rgb(228,76,101);*/
     background:rgb(39,40,51);
     padding:2em 0 .5em 0;
 }
-/*.icon.major.sm{
-    color:rgb(39,40,51);
-}*/
 .wrapper.style2{
     /*background:rgb(28,29,38);*/
 }
+.wrapper.console-app-div{
+    padding:4em 0 4em 0;
+    box-shadow:5px 0 5px #000;
+}
+
 #footer{
     background:rgb(39,40,51);
     padding:2em 0;
@@ -137,6 +124,13 @@ ul.animationList{
 }
 #less-margin{
     margin-bottom:2em;
+}
+.consoleApps-header-p{
+    margin-bottom:0em;
+    font-weight:300;
+}
+a .underlineTest{
+    text-decoration:line-through;
 }
 
 
